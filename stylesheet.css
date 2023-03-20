@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+}
+
+/* Header */
+
+header, .logo_and_links, .links_container, .login_and_register_container {
+    display: flex;
+}
+
+.dropdown_menu_Features, .dropdown_menu_Company {
+    display: flex;
+    box-shadow: 1px 10px 16px rgba(0, 0, 0, 0.171);
+    z-index: 1;
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.dropdown_menu_Features {
+    top: 40px;
+    left: 5%;
+    display: none;
+}
+
+#menu_icon {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown_menu_Features img {
+    padding: 8px;
+}
+
+.dropdown_menu_Features a, .dropdown_menu_Company a {
+    padding: 10px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.dropdown_menu_Company {
+    top: 40px;
+    left: 13%;
+    display: none;
+}
+
+.dropdown_menu_img, .dropdown_menu_links {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+
+.logo_and_links {
+    align-items: center;
+}
+
+.logo_div {
+    margin: 0px 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.links_container a, .login_and_register_container a {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    padding: 0px 20px;
+    font-size: 0.9em;
+    letter-spacing: -0.03em;
+    transition: 700ms;
+}
+
+.links_container a:hover {
+    transform: scale(0.95);
+}
+
+.login_and_register_container a:hover {
+    transform: scale(0.95);
+}
+
+/* Main */
+
+#side_menu {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 1px;
+    width: 250px;
+    background-color: hsl(0, 0%, 98%);
+    transition: 500ms;
+    box-shadow: 1px 1px 250px rgba(0, 0, 0, 0.534);
+    align-items: center;
+}
+
+.closebtn {
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    display: none;
+}
+
+#side_menu_structure {
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+    padding-top: 60px;
+    position: absolute;
+    transition: 400ms;
+}
+
+.side_menu_links,  .side_menu_login_register{
+    display: flex;
+    flex-direction: column;
+}
+
+.side_menu_links a, .side_menu_login_register a {
+    text-decoration: none;
+    padding: 10px;
+    color: hsl(0, 0%, 41%);
+}
+
+.side_menu_login_register {
+    padding: 20px;
+    text-align: center;
+}
+
+.side_menu_login_register a {
+    padding: 10px 60px;
+    margin-bottom: 5px;
+}
+
+.side_menu_login_register a:hover {
+    border-radius: 15px;
+    border: solid 2px rgba(0, 0, 0, 0.171);
+}
+
+main {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+main, .content_left {
+    display: flex;
+}
+
+.content_left {
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.content_h1 {
+    font-size: 3.5em;
+    width: 600px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.content_p {
+    width: 500px;
+    font-size: 1.3em;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5em;
+    padding-bottom: 100px;
+}
+
+#button_lm {
+    background-color: hsl(0, 0%, 8%);
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    padding: 15px 20px;
+    border: solid 2px black;
+    border-radius: 15px;
+    transition: 500ms;
+}
+
+#button_lm:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.content_img {
+    padding-top: 40px;
+}
+
+.content_img img  {
+    padding: 30px 30px 30px 0px;
+}
+
+.container_img_right {
+    margin-top: 20px;
+    background-image: url(images/image-hero-desktop.png);
+    width: 500px;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+#sidelist_container {
+    display: none;
+    padding-left: 30px;
+    
+}
+
+#sidelist_container, .sidemenu_menu_img, #sidelist_links_f, #sidelist_links_c {
+    display: flex;
+}
+
+#sidemenu_menu_img {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#sidelist_links_f {
+    display: none;
+    flex-direction: column;
+    padding: 10px 0px 10px 5px
+}
+
+#sidelist_links_c {
+    display: none;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+
+@media all and (max-width: 1250px) {
+
+    .links_container, .login_and_register_container a{
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin: 0%;
+        width: auto;
+    }
+
+    .content_left {
+        padding: 0%;
+        margin: 0px;
+        justify-content: stretch;
+    }
+
+    .content_h1 {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        width: auto;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .content_p {
+        width: auto;
+        padding: 20px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #button_div {
+        padding: 20px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+
+    .content_img {
+        padding: 20px 0px;
+        margin: 0px auto;
+    }
+
+    .content_img img {
+        scale: 0.7;
+        padding: 0px;
+    }
+
+    .container_img_right {
+        background-image: url(images/image-hero-mobile.png);
+        height: 300px;
+        width: auto;
+    }
+
+    #menu_icon {
+        margin-right: 10px;
+        display: flex;
+    }
+}
